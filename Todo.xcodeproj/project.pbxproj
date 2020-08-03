@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		A0264F0524CD297800F91AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0264F0424CD297800F91AA8 /* Assets.xcassets */; };
 		A0264F0824CD297800F91AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0264F0624CD297800F91AA8 /* LaunchScreen.storyboard */; };
 		AD85338204B57966A46A4BBB /* Pods_TODO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4102AF97585A47509578BABD /* Pods_TODO.framework */; };
+		87C8D61C43A447969DA18395 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = ABBB64E137DC46D799FE1176 /* amplifyconfiguration.json */; };
+		E5CB2DA8092940AEB800B629 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C2D2F8AC532494E8583E82A /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		A0264F0724CD297800F91AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0264F0924CD297800F91AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61176C06CD1C26A7F7465F0 /* Pods-TODO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODO.release.xcconfig"; path = "Target Support Files/Pods-TODO/Pods-TODO.release.xcconfig"; sourceTree = "<group>"; };
+		B4C52C7F36014715B44D2768 /* amplifytools.xcconfig */ = {isa = PBXFileReference; name = "amplifytools.xcconfig"; path = "amplifytools.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.xcconfig; explicitFileType = undefined; includeInIndex = 0; };
+		ABBB64E137DC46D799FE1176 /* amplifyconfiguration.json */ = {isa = PBXFileReference; name = "amplifyconfiguration.json"; path = "amplifyconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7C2D2F8AC532494E8583E82A /* awsconfiguration.json */ = {isa = PBXFileReference; name = "awsconfiguration.json"; path = "awsconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		93E3074049794CD1BEA64379 /* schema.graphql */ = {isa = PBXFileReference; name = "schema.graphql"; path = "amplify/backend/api/amplifyDatasource/schema.graphql"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,7 @@
 		A0264EEF24CD297700F91AA8 = {
 			isa = PBXGroup;
 			children = (
+				4FED056F519946219FCED140 /* AmplifyConfig */,
 				A0264EFA24CD297700F91AA8 /* TODO */,
 				A0264EF924CD297700F91AA8 /* Products */,
 				AC41B6B9B368711DBD25E4B7 /* Pods */,
@@ -88,8 +95,27 @@
 				9A3A2047221F4C57D22AC98C /* Pods-TODO.debug.xcconfig */,
 				F61176C06CD1C26A7F7465F0 /* Pods-TODO.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4FED056F519946219FCED140 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				B4C52C7F36014715B44D2768 /* amplifytools.xcconfig */,
+				ABBB64E137DC46D799FE1176 /* amplifyconfiguration.json */,
+				7C2D2F8AC532494E8583E82A /* awsconfiguration.json */,
+				93E3074049794CD1BEA64379 /* schema.graphql */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		4542CE8F1E3546B7886326A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = undefined;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +130,7 @@
 				A0264EF524CD297700F91AA8 /* Frameworks */,
 				A0264EF624CD297700F91AA8 /* Resources */,
 				A7D197D9793104CCDA4289D0 /* [CP] Embed Pods Frameworks */,
+				A0264F0F24CD2FEB00F91AA8 /* Run Amplify Tools */,
 			);
 			buildRules = (
 			);
@@ -155,12 +182,32 @@
 				A0264F0824CD297800F91AA8 /* LaunchScreen.storyboard in Resources */,
 				A0264F0524CD297800F91AA8 /* Assets.xcassets in Resources */,
 				A0264F0324CD297700F91AA8 /* Main.storyboard in Resources */,
+				87C8D61C43A447969DA18395 /* amplifyconfiguration.json in Resources */,
+				E5CB2DA8092940AEB800B629 /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A0264F0F24CD2FEB00F91AA8 /* Run Amplify Tools */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Amplify Tools";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
+		};
 		A7D197D9793104CCDA4289D0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
