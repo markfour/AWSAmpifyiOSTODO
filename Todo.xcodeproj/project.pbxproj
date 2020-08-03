@@ -16,6 +16,10 @@
 		AD85338204B57966A46A4BBB /* Pods_TODO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4102AF97585A47509578BABD /* Pods_TODO.framework */; };
 		87C8D61C43A447969DA18395 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = ABBB64E137DC46D799FE1176 /* amplifyconfiguration.json */; };
 		E5CB2DA8092940AEB800B629 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C2D2F8AC532494E8583E82A /* awsconfiguration.json */; };
+		6527554635F341519E123AD1 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607FEF333C642DD959240AE /* AmplifyModels.swift */; };
+		7F4752C590664DBA8EF40F32 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97C3E6B0174DE59921506F /* Priority.swift */; };
+		7380951EA21740D59061DDE0 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A166C802A854EBCA9210367 /* Todo.swift */; };
+		105DCBD36BCB4C259459CFA0 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A8DD33BDAC48D5AF1E8D20 /* Todo+Schema.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		ABBB64E137DC46D799FE1176 /* amplifyconfiguration.json */ = {isa = PBXFileReference; name = "amplifyconfiguration.json"; path = "amplifyconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		7C2D2F8AC532494E8583E82A /* awsconfiguration.json */ = {isa = PBXFileReference; name = "awsconfiguration.json"; path = "awsconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		93E3074049794CD1BEA64379 /* schema.graphql */ = {isa = PBXFileReference; name = "schema.graphql"; path = "amplify/backend/api/amplifyDatasource/schema.graphql"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text; explicitFileType = undefined; includeInIndex = 0; };
+		C607FEF333C642DD959240AE /* AmplifyModels.swift */ = {isa = PBXFileReference; name = "AmplifyModels.swift"; path = "amplify/generated/models/AmplifyModels.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		FD97C3E6B0174DE59921506F /* Priority.swift */ = {isa = PBXFileReference; name = "Priority.swift"; path = "amplify/generated/models/Priority.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		2A166C802A854EBCA9210367 /* Todo.swift */ = {isa = PBXFileReference; name = "Todo.swift"; path = "amplify/generated/models/Todo.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		47A8DD33BDAC48D5AF1E8D20 /* Todo+Schema.swift */ = {isa = PBXFileReference; name = "Todo+Schema.swift"; path = "amplify/generated/models/Todo+Schema.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 		A0264EEF24CD297700F91AA8 = {
 			isa = PBXGroup;
 			children = (
+				DD95E406442649A6A37A8834 /* AmplifyModels */,
 				4FED056F519946219FCED140 /* AmplifyConfig */,
 				A0264EFA24CD297700F91AA8 /* TODO */,
 				A0264EF924CD297700F91AA8 /* Products */,
@@ -116,6 +125,18 @@
 			);
 			name = Resources;
 			path = undefined;
+			sourceTree = "<group>";
+		};
+		DD95E406442649A6A37A8834 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				C607FEF333C642DD959240AE /* AmplifyModels.swift */,
+				FD97C3E6B0174DE59921506F /* Priority.swift */,
+				2A166C802A854EBCA9210367 /* Todo.swift */,
+				47A8DD33BDAC48D5AF1E8D20 /* Todo+Schema.swift */,
+			);
+			name = AmplifyModels;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +278,10 @@
 				A0264F0024CD297700F91AA8 /* ViewController.swift in Sources */,
 				A0264EFC24CD297700F91AA8 /* AppDelegate.swift in Sources */,
 				A0264EFE24CD297700F91AA8 /* SceneDelegate.swift in Sources */,
+				6527554635F341519E123AD1 /* AmplifyModels.swift in Sources */,
+				7F4752C590664DBA8EF40F32 /* Priority.swift in Sources */,
+				7380951EA21740D59061DDE0 /* Todo.swift in Sources */,
+				105DCBD36BCB4C259459CFA0 /* Todo+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
