@@ -12,22 +12,20 @@ import Amplify
 import AmplifyPlugins
 
 class ViewController: UIViewController {
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
-    
+
     performOnAppear()
   }
-  
-  func performOnAppear() {
+
+  private func performOnAppear() {
     let item = Todo(name: "Finish quarterly taxes",
                     priority: .high,
                     description: "Taxes are due for the quarter next week")
     save(item: item)
   }
-  
-  func save(item: Todo) {
+
+  private func save(item: Todo) {
     Amplify.DataStore.query(Todo.self, completion: { result in
       switch(result) {
       case .success(let todos):
